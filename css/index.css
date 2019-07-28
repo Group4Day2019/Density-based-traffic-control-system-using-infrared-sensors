@@ -1,0 +1,181 @@
+@font-face{
+    font-family: app_font;
+    src: url(./fonts/CenturyGothic.ttf);
+}
+body {
+    margin: 0px;
+    font-family: app_font;
+}
+
+
+
+.ndhder {
+    background: aquamarine;
+    width: fit-content;
+    height: fit-content;
+    font-size: 31px;
+    padding: 10px;
+    font-weight: 900;
+}
+
+.nbdy {
+    position: absolute;
+    top: 14px;
+    left: 20px;
+}
+
+.ksdka {
+    margin-top: 38px;
+}
+
+.jkx {
+    font-size: 33px;
+    font-weight: 900;
+}
+
+.ksfs {
+    font-size: 20px;
+    padding-left: 18px;
+    background: aquamarine;
+    margin-top: 13px;
+    width: fit-content;
+    padding-right: 15px;
+}
+
+.ldfl {
+    margin-top: 56px;
+}
+
+.ksdf {
+    font-size: 29px;
+    font-weight: 900;
+    background-color: #00ff0a;
+    width: fit-content;
+    padding-left: 21px;
+    padding-right: 21px;
+}
+
+.lasdal {
+    margin-top: 35px;
+    font-size: 44px;
+    font-weight: 900;
+}
+
+.kdfjk {
+    font-size: 22px;
+    margin-top: 13px;
+    background: #faff22;
+    width: 558px;
+    padding-left: 21px;
+    padding-right: 17px;
+    padding: 13px;
+    font-weight: 900;
+}
+
+h5.dskfsl {
+    font-size: 28px;
+    font-weight: 900;
+    background: #7fff84;
+    width: fit-content;
+    padding-left: 47px;
+    padding-right: 43px;
+}
+
+
+p.sdfmn {
+    background: aquamarine;
+    font-size: 22px;
+    width: 572px;
+    padding: 16px;
+    font-weight: 900;
+    padding-left: 81px;
+}
+
+h1.sklfm {
+    background: #FFC107;
+    width: fit-content;
+    padding: 10px;
+}
+
+p.sdfnd {
+    background: #1ee8e9;
+    width: 695px;
+    font-size: 23px;
+    padding: 13px;
+    font-weight: 900;
+    padding-left: 75px;
+}
+
+h2.ksfnsdf {
+    background: aquamarine;
+    width: fit-content;
+    padding: 11px;
+}
+
+p.adiewr {
+    font-weight: 900;
+    background: #06ff26;
+    width: 744px;
+    font-size: 22px;
+    padding: 14px;
+    padding-left: 75px;
+}
+
+.knvdv {
+    margin-top: 17px;
+}
+
+h5.kfnsdfs {
+    background: #b2f436;
+    font-size: 26px;
+    width: fit-content;
+    padding: 13px;
+}
+
+p.owewe {
+    background: darkorange;
+    font-size: 22px;
+    width: 767px;
+    font-weight: 900;
+    padding: 14px;
+    padding-left: 63px;
+}
+
+.hder {
+    background: #00ffc6;
+    font-size: 33px;
+    width: fit-content;
+    padding: 12px;
+    padding-right: 111px;
+    font-weight: 900;
+}
+
+li.kdsfnkz {
+    background: #afff7f;
+    width: fit-content;
+    margin-top: 13px;
+    font-size: 31px;
+    cursor: pointer;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+li.kdsfnkz:hover {
+    background: #00ffc6;
+}
+
+.footer {
+    background: #00ff97;
+    width: 421px;
+    font-size: 33px;
+    padding-bottom: 93px;
+    margin-left: 75px;
+    padding-top: 6px;
+    padding-left: 33px;
+}
+
+a.alr {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
