@@ -1,53 +1,492 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
-    <title>Group4Day2019</title>
-    <link rel="stylesheet" href="./css/index.css">
+  <title>Group4</title>
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <style>
+    .menu-index {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="nbdy">
-        <div class="ndhder">TWO WAY TRAFFIC LIGHTS SYSTEM</div>
-        <div class="ksdka">
-            <div class="jkx">Why is it a two way?</div>
-            <div class="ksfs">We believe that whatever we develop, creates impact</div>
-        </div>
-        <div class="ldfl">
-            <div class="ksdf">What we are working on Currently</div>
-            <div class="lasdal">The Current System</div>
-            <div class="kdfjk">The current System is a one way because it uses only one fuctionality which is the fixed time delay</div>
-        </div>
-        <div class="ksdfna">
-            <h5 class="dskfsl">How is this problem</h5>
-            <p class="sdfmn">Its a problem in such away that during the rush hours you can find a green light on an empty road yet a road flooded with Vechicles has a red light on it</p>
-        </div>
-        <div class="knvdv">
-            <h1 class="sklfm">Good News</h1>
-            <p class="sdfnd">Our system is a two in one why because it has two functionalities which are both the fixed time delays and infrared sensors which are used to detect density of vechicles on the road</p>
-
-            <h2 class="ksfnsdf">Simple description of how the System works</h2>
-            <p class="adiewr">if its normal traffic flow at the junction our system uses fixed time delays to control the movement vechicles on the road. If vechicles start increasing on some roads at the junctions then the sensors come into play</p>
-        </div>
-        <div class="jkdfk">
-            <h5 class="kfnsdfs">Information about the team creating the System</h5>
-            <p class="owewe">Currently the system is a finished prototype(System demostration) which will be implemented if approved by authorities and the government/organisation is willing to invest in it below are the team members
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <div class="content">
+      <div class="content-table flex-column">
+        <!--Start Intro-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h1 class="andy">DENSITY BASED TRAFFIC CONTROL SYSTEM USING IR SENSORS</h1>
+            <img class="image" src="img/projimge1.jpg">
+          </div>
+          <div class="flex-item flex-column">
+            <p class="text text-large">
+              <a target="_blank" href="javascript:void(0)">Author 1</a> Okello Andrew Peters<br>
+              <a target="_blank" href="javascript:void(0)">Author 2</a> Mugume Ian<br>
+              <a target="_blank" href="javascript:void(0)">Author 3</a> Nakayiga Pricilar J<br>
+              <a target="_blank" href="javascript:void(0)">Author 4</a> Ankakunda Shivan<br>
+              <a target="_blank" href="javascript:void(0)">Author 5</a> Mambo Moses<br>
             </p>
+          </div>
         </div>
-        <div class="tm">
-            <div class="hder">Group Member Names</div>
-            <ol>
-                <li class="kdsfnkz">Okello Andrew Peters</li>
-                <li class="kdsfnkz">Mugume Ian</li>
-                <li class="kdsfnkz">Nakayiga Pricilar J</li>
-                <li class="kdsfnkz">Mambo Moses</li>
-                <li class="kdsfnkz">Ankankunda Shivan</li>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <p class="text add-top-margin">
+              <h4>Introduction</h4>
+              The project is about creating a system that automatically detects the high traffic density on any of the roads using Infrared sensors as they get activated and receive the signal as the vehicles and motorcycles pass close to them placed on each road and releases those with a high density hence controlling traffic congestion during the rush hours for the busy people travelling to their destinations.
+            </p>
+          </div>
+        </div>
+        <!--End Intro-->
+        <!--Start Text Only-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">Methodology</h2>
+            <hr>
+            <p class="text">
+              Our proposed system is going to be able to use the current fixed time delays during normal traffic flow to release vehicles and in case of high traffic density on any of the roads, the proposed system will then use IR sensors to determine high traffic density on any of the roads to release the vehicles. In case traffic density is equal on all the roads, vehicles and motorcycles will be released according to priority. The project is intended to develop a density based traffic control system using Infrared sensors placed along the roads to overcome traffic congestion. In Uganda today, our present methodology for traffic controlling on roads uses traffic officers and fixed time delays to release vehicles and motorcycles on junction roads across the country. Each side of the road has to wait for a fixed timing or even an instruction from a traffic officer and are allowed to cross for a limited fixed time. In the proposed system, we will use IR sensors to measure the traffic density to determine the release of vehicles and motor cycles too. However if there is normal traffic flow at the junction, there will be a fixed timing of quite some few seconds to release vehicles and motorcycles. We are to place two IR sensors on each road about 2 – 12cm apart. IR sensors get activated and receive the signal as the vehicles and motorcycles pass close to them; these sensors always detect the traffic on any given road and if there is high traffic density on a particular road, a green LED will glow to release those and the rest of the three roads will light red LEDs to stop in order to reduce on the traffic jam. If the traffic density on all roads is equal, vehicles and motorcycles will be released according to priority. All these sensors are interfaced to the microcontroller. Based on these sensors, the microcontroller detects the traffic and controls the traffic system by first releasing roads with high traffic densities hence overcoming delays and chaotic congestion on the road. The microcontroller to be used in this project is ARDUINO. 
+            </p>
+            <h3>Aim and objectives</h3>
+            <p class="text">
+              The aim of the project is to solve traffic congestion which is a severe problem in most junction roads (round about) in Uganda.            </p>
+              <h2>Objectives</h2>
+              <p>The main objective of this project to control the traffic lights based on the density of theVehicles .In this system IR sensors are used to measure the density of the vehicles which areFixed at a distance apart. All the sensors are interfaced with the microcontroller which inturn controls the traffic signals system according to density detected by the sensors. The trafficDensity is high on particular side more priority is given for that side.
+             </p>
+            <ul>
+              <h3>Benefits</h3>
+              <li>Road users are going to be able to save considerable amount of time.</li>
+              <li>Road users are going to be able to avoid unnecessary occurrence of traffic jams which causes public inconvenience.</li>
+              <li>There will be no need of traffic officers at the junctions for supervising the traffic smoothly.</li>
+              <li>The intelligent work which would have been done by the traffic officers will now be perfectly done by the micro controller in the circuit with the help of IR sensors and the program coded in the micro controller.</li>
+              <li>During normal time, the signal timing changes automatically on seeing the traffic density at the junction but in case of any emergency vehicle like ambulances, fire brigade etc., requiring priority are built in in with RF control to override the set timing by providing instantaneous green signal in the desired direction while blocking the other lanes by red signal for some time. It reduces possibilities of traffic jams caused by traffic lights to an extent.</li>
+              <li>To avoid displaying green LEDs on empty roads yet other roads with vehicles are put on hold.  </li>
+
+              
+            <h3>List with Customized Reverse Numbering</h3>
+            <ol class="publication C-list">
+              <li>
+                <p class="text-small-margin">
+                  Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+                  augue. Curabitur ullamcorper ultricies nisi.
+                </p>
+              </li>
+              <li>
+                <p class="text-small-margin">
+                  Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+                  condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
+                  vel, luctus pulvinar, hendrerit id, lorem.
+                </p>
+              </li>
+              <li>
+                <p class="text-small-margin">
+                    Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
+                    coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
+                </p>
+              </li>
             </ol>
+            <h3>Subsection Title</h3>
+            <p class="text">
+              Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
+              coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
+              It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
+              simplificat Angles, quam un skeptic Cambridge amico dit me.
+            </p>
+          </div>
         </div>
-        <div class="footer">
-            <a class="alr" href="http://github.com/Group4Day2019">Follow us on Github</a>
+        <!--End Text Only-->
+        <!--Start Text with Buttons-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">Text with Buttons and Inputs</h2>
+            <hr>
+            <p class="text">
+              Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
+              sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
+              li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
+              custosi traductores. At solmen va esser.
+            </p>
+            <div class="control-group">
+              <button class="custom-button">Default</button>
+              <button class="custom-button custom-button-primary">Primary</button>
+              <button class="custom-button custom-button-danger">Danger</button>
+              <button class="custom-button custom-button-info">Info</button>
+              <button class="custom-button" disabled>Disabled</button>
+              <a class="custom-button" target="_blank" href="https://github.com/yenchiah/project-website-template" target="_blank">Hyperlink</a>
+              <button class="custom-button custom-button-primary stretch-on-mobile">Stretch on Mobile</button>
+            </div>
+            <div class="control-group">
+              <button class="custom-button-flat"><img src="img/home.png"></button>
+              <button class="custom-button-flat" disabled><img src="img/home.png"></button>
+              <button class="custom-button-flat small"><img src="img/home.png"></button>
+              <button class="custom-button-flat large"><img src="img/home.png"></button>
+            </div>
+            <div class="control-group">
+              <button class="custom-button-flat"><img src="img/calendar.png"></button>
+              <button class="custom-button-flat"><img src="img/play.png"></button>
+              <button class="custom-button-flat"><img src="img/pause.png"></button>
+              <button class="custom-button-flat"><img src="img/stop.png"></button>
+              <button class="custom-button-flat"><img src="img/terrain.png"></button>
+              <button class="custom-button-flat"><img src="img/close.png"></button>
+              <button class="custom-button-flat"><img src="img/collection.png"></button>
+              <button class="custom-button-flat"><img src="img/next.png"></button>
+              <button class="custom-button-flat"><img src="img/back.png"></button>
+              <button class="custom-button-flat"><img src="img/setting.png"></button>
+              <a class="custom-button-flat" href="https://github.com/yenchiah/project-website-template" target="_blank">
+                <img src="img/link.png">
+              </a>
+            </div>
+            <div class="control-group">
+              <button class="custom-button-flat"><img src="img/home.png"><span>Home</span></button>
+              <button class="custom-button-flat" disabled><img src="img/home.png"><span>Disabled</span></button>
+              <button class="custom-button-flat small"><img src="img/home.png"><span>Small</span></button>
+              <button class="custom-button-flat large"><img src="img/home.png"><span>Large</span></button>
+            </div>
+            <div class="control-group">
+              <button class="custom-button-flat"><img src="img/calendar.png"><span>Calendar</span></button>
+              <button class="custom-button-flat"><img src="img/play.png"><span>Play</span></button>
+              <button class="custom-button-flat"><img src="img/stop.png"><span>Stop</span></button>
+              <button class="custom-button-flat"><img src="img/terrain.png"><span>Terrain</span></button>
+              <button class="custom-button-flat"><img src="img/close.png"><span>Close</span></button>
+              <button class="custom-button-flat"><img src="img/collection.png"><span>Collection</span></button>
+              <button class="custom-button-flat"><img src="img/next.png"><span>Next</span></button>
+              <button class="custom-button-flat"><img src="img/back.png"><span>Back</span></button>
+              <button class="custom-button-flat"><img src="img/setting.png"><span>Setting</span></button>
+              <a class="custom-button-flat" href="https://github.com/yenchiah/project-website-template" target="_blank">
+                <img src="img/link.png"><span>Hyperlink</span>
+              </a>
+              <button class="custom-button-flat stretch-on-mobile"><img src="img/play.png"><span>Stretch on Mobile</span></button>
+            </div>
+            <p class="text">
+              Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
+              coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
+              It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
+              simplificat Angles, quam un skeptic Cambridge amico dit me.
+            </p>
+          </div>
         </div>
+        <div class="flex-row-space-between">
+          <div class="flex-item flex-column">
+            <p class="text badge-text">Large Badge Caption!</p>
+          </div>
+          <div class="flex-item flex-column">
+            <div class="control-group">
+              <a href="javascript:void(0)" target="_blank" class="custom-image-button">
+                <img src="img/app-store-badge.png" width="150">
+              </a>
+              <a href="javascript:void(0)" target="_blank" class="custom-image-button">
+                <img src="img/google-play-badge.png" width="150">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <p class="text">
+              Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
+              sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
+              li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
+              custosi traductores. At solmen va esser.
+            </p>
+            <div class="control-group">
+              <input class="custom-textbox stretch-on-mobile" type="text" placeholder="e.g., 15213,15206">
+              <textarea class="custom-textbox stretch-on-mobile" placeholder="e.g., 15213,15206"></textarea>
+            </div>
+            <p class="text">
+              Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
+              coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
+              It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
+              simplificat Angles, quam un skeptic Cambridge amico dit me.
+            </p>
+          </div>
+        </div>
+        <!--End Text with Buttons-->
+        <!--Start Text with Images and Image buttons-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">Text with Images and Image Buttons (with Max Width)</h2>
+            <hr>
+            <p class="text">
+              Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
+              sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
+              li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
+              custosi traductores. At solmen va esser.
+            </p>
+          </div>
+        </div>
+        <div class="flex-row-space-between">
+          <div class="flex-item flex-column">
+            <img class="image max-width-400" src="img/dummay-img.png">
+            <p class="image-caption">Image Caption</p>
+          </div>
+          <div class="flex-item flex-column">
+            <a href="https://github.com/yenchiah/project-website-template" target="_blank" class="image max-width-400">
+              <img src="img/dummay-img.png">
+            </a>
+            <p class="image-caption">Image Button Caption</p>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <p class="text">
+              Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
+              sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
+              li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
+              custosi traductores. At solmen va esser.
+            </p>
+          </div>
+        </div>
+        <!--End Text with Images and Image buttons-->
+        <!--Start Text around Images-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">Text around Images (with Max Width)</h2>
+            <hr>
+            <p class="text">
+              <img class="image image-wrap-text max-width-400" src="img/dummay-img.png">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+              aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+              dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+              amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+              aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
+              voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
+              pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+              deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+              similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem
+              rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+              impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis.
+            </p>
+          </div>
+        </div>
+        <!--End Text around Images-->
+        <!--Start Text with Images and Videos-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">Text with Images and Videos</h2>
+            <hr>
+            <p class="text">
+              Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
+              coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
+              It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
+              simplificat Angles, quam un skeptic Cambridge amico dit me.
+            </p>
+            <a class="image adaptive-image" style="background-image: url('img/dummay-img-long.png'); min-height: 150px;" href="img/dummay-img-long.png" target="_blank"></a>
+            <p class="text">
+              Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
+              coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
+              It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
+              simplificat Angles, quam un skeptic Cambridge amico dit me.
+            </p>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+            <img class="image" src="img/dummay-img.png">
+          </div>
+          <div class="flex-item flex-item-stretch flex-column">
+            <p class="text">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+              aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+              dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+              sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+              magnam aliquam quaerat voluptatem. Sed ut perspiciatis unde.
+            </p>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+            <video preload controls autoplay loop muted playsinline class="image">
+              <source src="https://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="flex-item flex-item-stretch flex-column">
+            <p class="text">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+              aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+              dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+              sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+              magnam.
+            </p>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <p class="text">
+              Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
+              coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
+              It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
+              simplificat Angles, quam un skeptic Cambridge amico dit me.
+            </p>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch-2 flex-column">
+            <p class="text">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+              aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+              dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+              sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.
+            </p>
+          </div>
+          <div class="flex-item flex-item-stretch flex-column">
+            <img class="image" src="img/dummay-img.png">
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch-2 flex-column">
+            <p class="text">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+              aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+              dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+              sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.
+            </p>
+          </div>
+          <div class="flex-item flex-item-stretch flex-column">
+            <video preload controls autoplay loop muted playsinline class="image">
+              <source src="https://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+            <p class="text">
+              Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
+              sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
+              li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
+              custosi traductores. At solmen va esser.
+            </p>
+          </div>
+        </div>
+        <!--End Text with Images and Videos-->
+        <!--Start Text with Gallery-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">Text with Gallery (Responsive Size)</h2>
+            <hr>
+            <p class="text">
+              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
+              vel, luctus pulvinar, hendrerit id, lorem.
+            </p>
+          </div>
+        </div>
+        <div class="gallery">
+          <a href="javascript:void(0)" class="flex-column"><img src="img/dummay-img.png">
+            <div>Image Caption</div>
+          </a>
+          <a href="javascript:void(0)" class="flex-column"><img src="img/dummay-img.png">
+            <div>Image Caption</div>
+          </a>
+          <a href="javascript:void(0)" class="flex-column"><img src="img/dummay-img.png">
+            <div>Image Caption</div>
+          </a>
+          <a href="javascript:void(0)" class="flex-column"><img src="img/dummay-img.png">
+            <div>Image Caption</div>
+          </a>
+          <a href="javascript:void(0)" class="flex-column"><img src="img/dummay-img.png">
+            <div>Image Caption</div>
+          </a>
+          <a href="javascript:void(0)" class="flex-column"><img src="img/dummay-img.png">
+            <div>Image Caption</div>
+          </a>
+          <a href="javascript:void(0)" class="flex-column"><img src="img/dummay-img.png">
+            <div>Image Caption</div>
+          </a>
+          <a href="javascript:void(0)" class="flex-column"><img src="img/dummay-img.png">
+            <div>Image Caption</div>
+          </a>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <p class="text">
+              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
+              vel, luctus pulvinar, hendrerit id, lorem.
+            </p>
+          </div>
+        </div>
+        <!--End Text with Gallery-->
+        <!--Start List of Projects-->
+        <div class="flex-row">
+          <div class="flex-item flex-column full-width">
+            <h2 class="add-top-margin">List of Projects</h2>
+            <hr>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+            <img class="image max-width-400" src="img/dummay-img.png">
+          </div>
+          <div class="flex-item flex-item-stretch-4 flex-column">
+            <p class="text">
+              <a class="highlight-text" href="javascript:void(0)">Li Europan Lingues es Membres Del Sam Familie</a><br>
+              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+              condimentum rhoncus, sem quam semper libero, sit amet.
+            </p>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+            <img class="image max-width-400" src="img/dummay-img.png">
+          </div>
+          <div class="flex-item flex-item-stretch-4 flex-column">
+            <p class="text">
+              <a class="highlight-text" href="javascript:void(0)">Li Europan Lingues es Membres Del Sam Familie</a><br>
+              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+              condimentum rhoncus, sem quam semper libero, sit amet.
+            </p>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+            <img class="image max-width-400" src="img/dummay-img.png">
+          </div>
+          <div class="flex-item flex-item-stretch-4 flex-column">
+            <p class="text">
+              <a class="highlight-text" href="javascript:void(0)">Li Europan Lingues es Membres Del Sam Familie</a><br>
+              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+              condimentum rhoncus, sem quam semper libero, sit amet.
+            </p>
+          </div>
+        </div>
+        <!--End List of Projects-->
+        <!--Start Credits-->
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+            <p class="text text-small text-italic">
+              Credits: <span class="highlight-text">Organization One</span>: Author One and Author Two / <span class="highlight-text">Organization Two</span>: Author Three and Author Four
+            </p>
+          </div>
+        </div>
+        <!--End Credits-->
+      </div>
     </div>
+  </div>
 </body>
 
 </html>
